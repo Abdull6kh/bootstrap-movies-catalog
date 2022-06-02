@@ -25,7 +25,8 @@
                         <option value="two">Two</option>
                         <option value="three">Three</option>
                     </select>
-                    <input class="form-control mb-3" name="quality" list="datalistOptions" placeholder="Rating (high to low)">
+                    <input class="form-control mb-3" name="quality" list="datalistOptions"
+                        placeholder="Rating (high to low)">
                     <datalist id="datalistOptions">
                         <option value="Low to high">
                     </datalist>
@@ -65,7 +66,32 @@
                 <div class="row mb-4">
                     <div class="col-6">
                         <div class="card">
-                            <img src="./images/infinity-war.jpg" class="card-img-top" alt="infinity war">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./images/infinity-war.jpg" class="card-img-top d-block w-100"
+                                            alt="infinity war" width="414" height="232">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/car2.jpg" class="card-img-top d-block w-100"
+                                            alt="Captain America" width="414" height="232">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/car3.jpg" class="card-img-top d-block w-100" alt="Spiderman"
+                                            width="414" height="232">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <div class="card-body">
                                 <h3 class="card-title fs-4">Avengers: infinity War</h3>
                                 <div class="d-flex mb-2">
@@ -78,7 +104,35 @@
                                 </div>
                                 <div class="d-flex justify-content-between px-2">
                                     <button type="button" class="btn btn-outline-primary">Watch trailer</button>
-                                    <button type="button" class="btn btn-outline-info">More info</button>
+                                    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        More info
+                                    </button>
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">The Avengers</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    The Avengers, American comic strip superhero team whose frequently
+                                                    changing roster often included some of the most popular characters
+                                                    in the Marvel Comics universe. Billed as “Earth’s mightiest
+                                                    super-heroes,” the team was created by writer Stan Lee and artist
+                                                    Jack Kirby, and it debuted in The Avengers no. 1 (September 1963).
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Understood</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <button type="button" class="btn btn-outline-success">Bookmark</button>
                                 </div>
                             </div>
@@ -86,7 +140,32 @@
                     </div>
                     <div class="col-6">
                         <div class="card">
-                            <img src="./images/avengers.jpg" class="card-img-top" alt="infinity war">
+                            <div id="carouselExampleade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./images/avengers.jpg" class="card-img-top d-block w-100"
+                                            alt="The Avengers" width="414" height="232">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/car4.jpg" class="card-img-top d-block w-100"
+                                            alt="Captain America" width="414" height="232">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./images/car5.jpg" class="card-img-top d-block w-100" alt="Spiderman"
+                                            width="414" height="232">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleade"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleade"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                             <div class="card-body">
                                 <h3 class="card-title fs-4">The Avengers</h3>
                                 <div class="d-flex mb-2">
@@ -99,7 +178,37 @@
                                 </div>
                                 <div class="d-flex justify-content-between px-2">
                                     <button type="button" class="btn btn-outline-primary">Watch trailer</button>
-                                    <button type="button" class="btn btn-outline-info">More info</button>
+                                    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        More info
+                                    </button>
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">The Avengers</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Avengers: Infinity War is a 2018 superhero film, based on the Marvel
+                                                    Comics superhero team of the same name. The film is a sequel to The
+                                                    Avengers, Avengers: Age of Ultron, Captain America: Civil War,
+                                                    Doctor Strange, Guardians of the Galaxy Vol. 2, Spider-Man:
+                                                    Homecoming, Thor: Ragnarok, and Black Panther. It is the nineteenth
+                                                    film in the Marvel Cinematic Universe, and the seventh installment
+                                                    of Phase Three. The film was released on April 27, 2018.
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Understood</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <button type="button" class="btn btn-outline-success">Bookmark</button>
                                 </div>
                             </div>
@@ -117,6 +226,7 @@
             </div>
         </div>
     </div>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
